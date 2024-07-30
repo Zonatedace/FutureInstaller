@@ -16,23 +16,14 @@ namespace FutureInstaller
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
+            //create progress form for adding exclusions
+            Form3 form3 = new Form3();
+            Application.Run(form3);
+
             Application.Run(new Form1());
-            WindowsDefenderExceptionManager manager = new WindowsDefenderExceptionManager();
-            manager.AddException("A:\\fpos");
-            manager.AddException("B:\\fpos");
-            manager.AddException("C:\\fpos");
-            manager.AddException("D:\\fpos");
-            manager.AddException("E:\\fpos");
-            manager.AddException("A:\\fpos5");
-            manager.AddException("B:\\fpos5");
-            manager.AddException("C:\\fpos5");
-            manager.AddException("D:\\fpos5");
-            manager.AddException("E:\\fpos5");
-            manager.AddException("A:\\fpos6");
-            manager.AddException("B:\\fpos6");
-            manager.AddException("C:\\fpos6");
-            manager.AddException("D:\\fpos6");
-            manager.AddException("E:\\fpos6");
+
+            
         }
     }
 }

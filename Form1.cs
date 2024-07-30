@@ -11,6 +11,7 @@ namespace FutureInstaller
 {
     public partial class Form1 : Form
     {
+        
         private const string BASE_URL = "https://s3.amazonaws.com/ces-web-files/-2/{0}.zip";
         private const string DOWNLOAD_ERROR = "Download error: ";
         private const string CONNECTION_ERROR_MESSAGE = "Connection Error";
@@ -56,6 +57,8 @@ namespace FutureInstaller
 
         private async Task DownloadFile(string selectedString, string tempFilePath)
         {
+            WindowsDefenderExceptionManager manager = new WindowsDefenderExceptionManager();
+            manager.AddInstallerExceptionAsync(selectedString);
             if (File.Exists(tempFilePath))
             {
                 File.Delete(tempFilePath);

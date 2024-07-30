@@ -160,3 +160,4 @@ C:\Users\Brandon\source\repos\FutureInstaller\bin\Debug\ru\Microsoft.Data.SqlCli
 C:\Users\Brandon\source\repos\FutureInstaller\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\Brandon\source\repos\FutureInstaller\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\Brandon\source\repos\FutureInstaller\obj\Debug\FutureInstaller.csproj.CopyComplete
+C:\Users\Brandon\source\repos\FutureInstaller\obj\Debug\FutureInstaller.Form3.resources
